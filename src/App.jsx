@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const hello =<div>Hello, World!</div>  //react renderizza l'espressione jsx come parte del componente
+  const hello =<span>Hello, World!</span>  //react renderizza l'espressione jsx come parte del componente
 
   return (
     <h1>{hello}</h1>   
