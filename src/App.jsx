@@ -6,7 +6,7 @@ import "./App.css";
 
 
 function App() {
-  function sum(a, b) {
+  const sum = (a, b) => {
     const result = a + b;
     return result;
   }
