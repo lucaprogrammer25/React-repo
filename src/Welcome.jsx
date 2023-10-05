@@ -1,6 +1,8 @@
-export const Welcome = (props) => {
-    const {name} = props
-return (
-    <p>Welcome, {name} </p>
-)
+export function Welcome({ name }) {
+  return <p>Welcome, {name}!</p>;
 }
+
+Welcome.defaultProps = { 
+  name: 'Guest'
+}
+
