@@ -8,8 +8,8 @@ function App() {
   
 
   return (
-    <Welcome name="Luca"/>
-    
+    <Welcome name="Luca" age="25"/>
+
   )
 }
 
