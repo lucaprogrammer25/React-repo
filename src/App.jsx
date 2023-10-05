@@ -8,7 +8,7 @@ function App() {
   
 
   return (
-    <Welcome name="Luca" age=/>
+    <Welcome name="Luca" age="25"/>
   
   )
 }
