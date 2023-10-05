@@ -1,6 +1,9 @@
-export const Welcome = (props) => {
-    const {name} = props
+export const Welcome = ({name, age}) => {
+    
 return (
+    <>
     <p>Welcome, {name} </p>
+    <p>Your age is {age}</p>
+    </>
 )
 }
