@@ -3,10 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-const hello = () => {
+const Hello = () => {
     return (
     <h2>Hello, World!</h2>
     )
 }
 
-export default hello;
+export default Hello;
