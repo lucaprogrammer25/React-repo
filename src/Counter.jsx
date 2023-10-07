@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CounterDisplay from "./CounterDisplay";
+
 
 const Counter = ({initialValue, incrementAmount, decrementAmount}) => {
     const [count, setCount] = useState(initialValue)
@@ -19,6 +20,11 @@ const Counter = ({initialValue, incrementAmount, decrementAmount}) => {
     const handleCounterReset = () => {
         setCount(initialValue)
     }
+
+    useEffect(() => {
+        console.log(`The value of the counter is ${count}`)
+
+    }, [count])
     return (
         <>
         <CounterDisplay content={count}/>
