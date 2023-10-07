@@ -17,3 +17,5 @@ const Counter = () => {
 }
 
 export default Counter;
+
+// Il parametro deve essere una funzione così da poter essere aggiornato in modo asyncrono.
