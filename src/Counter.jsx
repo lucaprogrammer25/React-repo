@@ -25,6 +25,7 @@ const Counter = ({initialValue, incrementAmount, decrementAmount}) => {
         console.log(`The value of the counter is ${count}`)
 
     }, [count])
+    
     return (
         <>
         <CounterDisplay content={count}/>
