@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CounterDisplay from "./CounterDisplay";
 
 const Counter = ({initialValue, incrementAmount}) => {
     const [count, setCount] = useState(initialValue)
@@ -10,7 +11,7 @@ const Counter = ({initialValue, incrementAmount}) => {
     }
     return (
         <>
-        <h2>Counter:{count}</h2>
+        <CounterDisplay content={count}/>
         <button onClick={handleCounterIncrement}>Click me!</button>
         </>
     )
@@ -18,4 +19,3 @@ const Counter = ({initialValue, incrementAmount}) => {
 
 export default Counter;
 
-// Il parametro deve essere una funzione così da poter essere aggiornato in modo asyncrono.
