@@ -1,3 +1,5 @@
+import Button from "./Buttom"
+
 const AlertClock = () => {
     const handleButtonClick = () => {
         const now = new Date()
@@ -9,7 +11,7 @@ const AlertClock = () => {
     return(
         <>
         <p>Clicca qui per sapere l'ora</p>
-        <button onClick={handleButtonClick}>Clicca qui</button>
+        <Button onClick={handleButtonClick} label="Click me"/>
         </>
     )
 }
