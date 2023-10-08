@@ -12,3 +12,6 @@ const MouseClicker = () => {
 }
 
 export default MouseClicker
+
+
+//possiamo impedire di stampare name al click dell'img usando event.target.name
