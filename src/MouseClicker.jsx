@@ -1,11 +1,12 @@
 const MouseClicker = () => {
     const handleButtonClick = (event) => {
-        console.log(event.target.name);
+        console.log(event.currentTarget.name);
     }
 
     return (
         <>
-        <button name="one" onClick={handleButtonClick}>Click Me</button>
+        <button name="one" onClick={handleButtonClick}>
+            <img width={30} height={30} />Click Me</button>
         </>
     )
 }
