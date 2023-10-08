@@ -1,12 +1,13 @@
 import './App.css'
-import Clock from './Clock'
+import MouseClicker from './MouseClicker'
+
 
 function App() {
   
 
   return (
     <>
-      <Clock/>
+      <MouseClicker/>
     </>
   )
 }
