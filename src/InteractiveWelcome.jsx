@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Welcome } from "./src/Welcome";
+import { Welcome } from "./Welcome";
 
 const InteractiveWelcome = () => {
     const [name, setName] = useState('')
