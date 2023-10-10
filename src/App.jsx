@@ -7,9 +7,12 @@ import Login from './Login'
 
 function App() {
   
+  const onLogin = () => {
+    alert("Sei connesso")
+  }
 
   return (
-   <Login/>
+   <Login stateLogin={onLogin}/>
 
   )
 }
