@@ -3,8 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-const Messaggio = () => {
-    return <div>"Che bella giornata!"</div>
+const Message = () => {
+    return (
+    <p>What a beautiful day!</p>
+    )
 }
 
-export default Messaggio;
+export default Message;
