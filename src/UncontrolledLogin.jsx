@@ -27,5 +27,5 @@ const UncontrolledLogin = () => {
   export default UncontrolledLogin;
 
 
-//L'API standard utilizzata è FormDatgaesistono altri modi per accedere ai dati del dom, uno di questi è useRef o document.getElementById
+//L'API standard utilizzata è FormData ma esistono altri modi per accedere ai dati del dom, uno di questi è useRef o document.getElementById
   
