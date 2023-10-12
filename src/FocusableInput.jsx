@@ -1,14 +1,20 @@
 import React, { useRef, useEffect } from 'react';
 
 const FocusableInput = () => {
-  const inputRef = useRef(null);
-
+    const mountendRef = useRef(false)
+    
   useEffect(() => {
-    inputRef.current.focus();
+    if(!mountendRef.current){
+        mountendRef.current = true
+        console.log("Mounting for the first time")
+    } else {
+        console.log("Mounting again for debug puroposes");
+    }
   }, []);
 
+
   return (
-     <input ref={inputRef} type='text' />
+     <h1>Hello World!</h1>
   )
 };
 
