@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Colors({ items }) {
+const Colors = ({ items }) => {
     return (
         <ul>
             {items.map((color, index) => (
