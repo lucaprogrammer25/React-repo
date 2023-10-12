@@ -11,6 +11,7 @@ const TodoList = () => {
     const handleAddItem = () => {
         if (inputValue !== '') {
           setItems([...items, inputValue]);
+          setInputValue('')
         }
     }
     
