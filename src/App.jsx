@@ -9,9 +9,13 @@ function App() {
   
 
   return (
-    <div className='counter'>
-      <Counter initialValue={0} incrementAmount={1} decrementAmount={1} />
-    </div>
+     <div style={{
+      backgroundColor:"green",
+      borderRadius:"10px",
+      width:"fit-content"
+     }}>
+      <Counter initialValue={0} incrementAmount={1} decrementAmount={1}  />
+      </div>
   )
 }
 
