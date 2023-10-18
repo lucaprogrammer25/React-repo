@@ -1,17 +1,16 @@
 const AlertClock = () => {
-    const handleButtonClick = () => {
-        const now = new Date()
+  const handleButtonClick = () => {
+    const now = new Date();
 
-        alert(`Sono le ${now.toLocaleTimeString()}`)
-    }
+    alert(`Sono le ${now.toLocaleTimeString()}`);
+  };
 
+  return (
+    <>
+      <p>Clicca qui per sapere l'ora</p>
+      <button onClick={handleButtonClick}>Clicca qui</button>
+    </>
+  );
+};
 
-    return(
-        <>
-        <p>Clicca qui per sapere l'ora</p>
-        <button onClick={handleButtonClick}>Clicca qui</button>
-        </>
-    )
-}
-
-export default AlertClock
+export default AlertClock;
