@@ -1,19 +1,18 @@
-import Button from "./Buttom"
+import Button from "./Button";
 
 const AlertClock = () => {
-    const handleButtonClick = () => {
-        const now = new Date()
+  const handleButtonClick = () => {
+    const now = new Date();
 
-        alert(`Sono le ${now.toLocaleTimeString()}`)
-    }
+    alert(`Sono le ${now.toLocaleTimeString()}`);
+  };
 
+  return (
+    <>
+      <p>Clicca qui per sapere l'ora</p>
+      <Button onClick={handleButtonClick} label="Click me" />
+    </>
+  );
+};
 
-    return(
-        <>
-        <p>Clicca qui per sapere l'ora</p>
-        <Button onClick={handleButtonClick} label="Click me"/>
-        </>
-    )
-}
-
-export default AlertClock
+export default AlertClock;
