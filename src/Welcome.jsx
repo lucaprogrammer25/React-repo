@@ -1,9 +1,8 @@
-export const Welcome = ({name, age}) => {
-    
-return (
+export const Welcome = ({ name, age }) => {
+  return (
     <>
-    <p>Welcome, {name} </p>
-    <p>Your age is {age}</p>
+      <p>Welcome, {name} </p>
+      <p>Your age is {age}</p>
     </>
-)
-}
+  );
+};
