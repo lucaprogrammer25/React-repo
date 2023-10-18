@@ -1,16 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Welcome } from './Welcome'
+import "./App.css";
+import { Welcome } from "./Welcome";
 
 function App() {
-  
-
-  return (
-    <Welcome name="Luca" age="66"/>
-
-  )
+  return <Welcome name="Luca" age="66" />;
 }
 
-export default App
+export default App;
