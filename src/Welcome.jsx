@@ -1,7 +1,3 @@
-export function Welcome({ name }) {
+export function Welcome({ name = "Guest" }) {
   return <p>Welcome, {name}!</p>;
 }
-
-Welcome.defaultProps = {
-  name: "Guest",
-};
