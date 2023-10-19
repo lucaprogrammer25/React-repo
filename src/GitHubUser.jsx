@@ -34,7 +34,7 @@ const GitHubUser = ({ username }) => {
           <div>Username: {data.login}</div>
           <div>Name: {data.name}</div>
           <div>
-            <img src={data.avatar_url} alt={`${data.login}'s avatar`} />
+            <img src={data.avatar_url} alt={`${data.login} avatar`} />
           </div>
         </div>
       )}
