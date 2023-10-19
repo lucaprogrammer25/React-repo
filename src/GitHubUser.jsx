@@ -8,6 +8,7 @@ const GitHubUser = ({ username }) => {
 
   useEffect(() => {
     const fetchData = async () => {
+        setError(false)
       try {
         const result = await fetch(`${API_URL}${username}`);
         const response = await result.json();
