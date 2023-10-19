@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const API_URL = `https://api.github.com/users/`;
 
@@ -8,7 +8,7 @@ const GitHubUser = ({ username }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-        setError(false)
+      setError(false);
       try {
         const result = await fetch(`${API_URL}${username}`);
         const response = await result.json();
