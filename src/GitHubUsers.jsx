@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import useGitHubUser from "./useGitHubUser";
 import GitHubUser from "./GitHubUser";
 
-const GithubUsers = () => {
+
+const GitHubUsers = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [username, setUsername] = useState("");
+  const { loading, error, fetchUser, data } = useGitHubUser();
 
   const handleInputChange = (e) => {
     setSearchQuery(e.target.value);
@@ -11,7 +14,8 @@ const GithubUsers = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    setUsername(searchQuery); 
+    setUsername(searchQuery);
+    fetchUser(searchQuery); 
   };
 
   return (
@@ -21,9 +25,11 @@ const GithubUsers = () => {
         <input type="text" value={searchQuery} onChange={handleInputChange} placeholder="Inserisci lo username"/>
         <button type="submit">Invia</button>
       </form>
-      {username && <GitHubUser username={username} />}
+      {loading && <div>Caricamento...</div>}
+      {error && <div>Error: {error.message}</div>}
+      {data && <GitHubUser data={data} />} 
     </div>
   );
 };
 
-export default GithubUsers;
+export default GitHubUsers;

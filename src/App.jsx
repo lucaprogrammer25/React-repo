@@ -1,10 +1,9 @@
-import { useState, useContext } from "react";
+import React from "react";
 import "./App.css";
-import GitHubUser from "./GitHubUser";
-import GithubUsers from "./GitHubUsers";
+import GitHubUsers from "./GitHubUsers";
 
 function App() {
-  return <GithubUsers />;
+  return <GitHubUsers />;
 }
 
 export default App;
