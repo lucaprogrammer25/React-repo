@@ -1,10 +1,11 @@
-import { useState, useContext } from "react";
 import "./App.css";
-import GitHubUser from "./GitHubUser";
-import GithubUsers from "./GitHubUsers";
+import HookCounter from "./HookCounter";
+
 
 function App() {
-  return <GithubUsers />;
+    return (
+      <HookCounter/>
+    )
 }
 
 export default App;
