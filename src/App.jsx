@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import GitHubUsers from "./GitHubUsers";
+import LocationComponent from "./LocationComponent";
 
 function App() {
-  return <GitHubUsers />;
+  return <LocationComponent />;
 }
 
 export default App;
