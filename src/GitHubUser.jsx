@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const API_URL = `https://api.github.com/users/`;
 
@@ -8,7 +8,7 @@ const GitHubUser = ({ username }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      setError(false);
+        setError(false)
       try {
         const result = await fetch(`${API_URL}${username}`);
         const response = await result.json();
@@ -34,7 +34,7 @@ const GitHubUser = ({ username }) => {
           <div>Username: {data.login}</div>
           <div>Name: {data.name}</div>
           <div>
-            <img src={data.avatar_url} alt={`${data.login} avatar`} />
+            <img src={data.avatar_url} alt={`${data.login}'s avatar`} />
           </div>
         </div>
       )}

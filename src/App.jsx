@@ -1,10 +1,13 @@
-import { useState, useContext } from "react";
-import "./App.css";
+import {Routes, Route} from "react-router-dom"
 import GitHubUser from "./GitHubUser";
-import GithubUsers from "./GitHubUsers";
+import ShowGithubUser from "./ShowGithubUser";
 
 function App() {
-  return <GithubUsers />;
+  return (
+    <Routes>
+       <Route exact path="/users/:username" element={<ShowGithubUser/>} />
+    </Routes>
+  );
 }
 
 export default App;
