@@ -14,7 +14,7 @@ function App() {
     <Routes>
        <Route exact path="/" element={<Welcome name="Luca"/>} />
        <Route path="/users/:username" element={<ShowGithubUser/>}/>
-       <Route path="/counter" element={<Counter/>}/>
+       <Route path="/counter" element={<Counter initialValue={0} incrementAmount={1} decrementAmount={1} />}/>
     </Routes>
     </>
   );
