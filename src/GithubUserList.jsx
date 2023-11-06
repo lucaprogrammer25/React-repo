@@ -31,7 +31,7 @@ const GithubUserList = () => {
         <ul>
           {
             listGithub.length > 0 && (
-              usersList.map((username, index) => (
+              listGithub.map((username, index) => (
                 <li key={index}>
                   <Link to={`/users/${username}`}>{username}</Link>
                 </li>
