@@ -41,4 +41,3 @@ const Counter = ({initialValue, incrementAmount, decrementAmount}) => {
 }
 
 export default Counter;
-
