@@ -16,10 +16,11 @@ const App = () => {
       </nav>
       <Routes>
         <Route path="*" element={<NotFound/>} />
-        <Route path="/" element={<Welcome name="User"/>} />
+        <Route path="/" element={<Welcome name="User"/>}/>
         <Route path="/counter" element={<Counter />}/>
         <Route path="/users" element={<GithubUserList/>}>
-          <Route path=":username" element={<ShowGithubUser/>} />
+        <Route index element={<h2>Aggiungi un utente e selezionalo</h2>}/>
+          <Route path=":username" element={<ShowGithubUser/>}/>
         </Route>
       </Routes>
     </>
