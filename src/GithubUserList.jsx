@@ -26,7 +26,7 @@ const GithubUserList = () => {
         <form onSubmit={handleSubmitForm}>
           <label >insert username</label>
           <input type="text" name="username" value={username} onChange={handleUsername} />
-          <button disabled={username.length <= 0} type="submit">Invia</button>
+          <button disabled={username.length <= 0} type="submit">Submit</button>
         </form>
         <ul>
           {

@@ -9,18 +9,18 @@ import GithubUserList from "./GithubUserList";
 const App = () => {
   return (
     <>
-      <nav style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+      <nav>
         <Link to='/'>Home</Link>
         <Link to='/counter'>Counter</Link>
         <Link to='/users'>GithubUser</Link>
       </nav>
       <Routes>
-        <Route path="/" element={<Welcome name="User" />} />
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/users" element={<GithubUserList />}>
-          <Route path=":username" element={<ShowGithubUser />} />
+        <Route path="*" element={<NotFound/>} />
+        <Route path="/" element={<Welcome name="User"/>} />
+        <Route path="/counter" element={<Counter />}/>
+        <Route path="/users" element={<GithubUserList/>}>
+          <Route path=":username" element={<ShowGithubUser/>} />
         </Route>
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   )
