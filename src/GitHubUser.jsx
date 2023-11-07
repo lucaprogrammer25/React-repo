@@ -10,13 +10,13 @@ const GitHubUser = ({ username }) => {
     const fetchData = async () => {
         setError(false)
       try {
-        const result = await fetch(`${API_URL}${username}`);
-        const response = await result.json();
+        const response = await fetch(`${API_URL}${username}`);
+        const result = await response.json();
 
-        if (result.ok) {
-          setData(response);
+        if (response.ok) {
+          setData(result);
         } else {
-          setError(response);
+          setError(result);
         }
       } catch (error) {
         setError(error);
