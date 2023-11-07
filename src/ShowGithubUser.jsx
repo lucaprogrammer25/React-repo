@@ -7,7 +7,7 @@ function ShowGithubUser() {
   return (
     <div>
       <h2>Dettagli Utente GitHub</h2>
-      <GitHubUser username={"lucaprogrammer225"} />;
+      <GitHubUser username={username} />;
     </div>
   );
 }
