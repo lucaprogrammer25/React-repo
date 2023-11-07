@@ -5,11 +5,12 @@ import useGithubUser from "./useGithubUser";
 
 const GitHubUser = ({ username }) => {
    const API_URL = `https://api.github.com/users/${username}`;
-   const {data, error} = useGithubUser(API_URL, username)
+   const {data, error, handleRefreshUser} = useGithubUser(API_URL, username)
 
 
   return (
     <div>
+      <button onClick={handleRefreshUser}>Refresh</button>
       {error && <div>Error: {error.message}</div>}
       {data && (
         <div>
